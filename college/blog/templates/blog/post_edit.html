@@ -1,0 +1,17 @@
+{% extends 'blog/base1.html' %}
+
+{% block content %}
+<div style=" background-color:Cyan;">
+  <div style="margin-left:350px;">
+
+    <form method="POST" class="post-form">{% csrf_token %}
+<fieldset >
+    <legend style="color:red;">  Register New student:</legend>
+      {{ form.as_p }}
+        <button type="submit" class="save btn btn-default" style="margin-left:200px;">Save</button>
+  </fieldset>
+      
+    </form>
+ </div>
+ </div>
+{% endblock %}

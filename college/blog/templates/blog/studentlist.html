@@ -1,0 +1,15 @@
+{% extends 'blog/basestudentlist.html' %}
+
+{% block content %}
+{% for post in studentlists %}
+    <div class="post" style="float:left; margin-left:20px; margin-top:30px; border-style: solid; color:black; background-color:Orange; width:220px; height:120px;">
+        <div class="date" style="float:left; ">
+          
+        </div>
+        <h1></h1><a href="{% url 'student_detail' pk=post.pk %}">Student Name: {{ post.name }}</a>
+        <p>Student ID: {{ post.std_id|linebreaksbr }}</p>
+  Course Name: {{ post.classs }}
+    </div>
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'blog/details.html' %}
+
+
+{% block content %}
+    <div class="post">
+        {% if post.name %}
+            <div class="date">
+               
+            </div>
+        {% endif %}
+        <h1>Student Name: {{ post.name }}</h1>
+        <p>Student ID:{{ post.std_id|linebreaksbr }}</p>
+ <p>Mobile Number: {{ post.mobile }}</p>
+ <p>Email ID: {{ post.email }}</p>
+<p>Department: {{ post.department}}</p>
+<p>Course: {{ post.classs}}</p>
+    </div>
+{% endblock %}

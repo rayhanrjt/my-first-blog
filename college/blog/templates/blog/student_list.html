@@ -1,0 +1,13 @@
+
+
+<div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
+
+{% for student in Students %}
+    <div>
+        <p>name: {{ student.name }}</p>
+        <h1><a href="">{{ student.std_id }}</a></h1>
+        <p>{{ student.email|linebreaksbr }}</p>
+    </div>
+{% endfor %}
